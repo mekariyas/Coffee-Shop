@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    color:white;
+}
+::-webkit-scrollbar-track{
+    color: brown;
+}
+::-webkit-scrollbar-thumb{
+    color: brown;
+}
+::-webkit-scrollbar-button{
+    color: brown;
+    width: 5px;
+    height: 10px;
+}
+
+
+                      /*header beginning*/
+
+header{
+    width: 100%;
+    height: 100vh;
+    border-bottom: 2px solid white;
+    background-image: url("../images/cafe.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode:color-burn;
+    background-size:cover;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    justify-content: space-between;
+    align-items:center;
+}
+nav .Menu{
+    display: none;
+}
+nav img{
+    width: 200px;
+    height: 45px;
+}
+nav ul{
+    display: flex;
+    align-items:center;
+    height: 50px;
+    justify-content: space-around;
+    width: 50%;
+    min-width:25%;
+    list-style-type: none;
+}
+
+nav ul li a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: brown;
+    transition:  text-decoration 1s ease-in-out .3s;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+    color: white;
+}
+nav ul li:hover{
+    background-color: brown;
+    color: white;
+}
+header .title{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title h1{
+    font-size: 6rem;
+    color: brown;
+    font-family: 'Dancing Script', sans-serif;
+}
+.title img{
+    width: 100px;
+    height: 100px;
+    min-width: 50px;
+    min-height: 50px;
+} 
+                      /*header end*/
+
+                  /*Main Tag beginning*/ 
+            
+
+.products-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+.products-wrapper h2{
+    color: brown;
+    font-size: 2.3rem;
+    text-align: center;
+    font-weight:bolder;
+    margin:30px 0;
+}
+
+.products-wrapper .products{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items:center;
+    list-style-type: none;
+    background-image: url('../images/beans.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 80%;
+    width: 100%;
+    overflow-x: scroll;
+    
+}
+.products li{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90%;
+    width: 500px;
+    background-color: white;
+    border-radius: 10px;
+}
+.products li:first-child{
+    margin-left: 10px;
+}
+.products li:last-child{
+    margin-right: 20px;
+}
+.products li img{
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    min-width: 120px;
+    height: 150px;
+    object-fit: fill;
+    border-radius: 10px;
+}
+.products,h3, p{
+    color: brown;
+    display: block;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    text-align: center;
+}
+.products p{
+    width: 250px;
+    display: block; 
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+                       
+
+                         
+.reviews-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.review-wrapper h2{
+    color: brown;
+    font-size: 2.3rem;
+    text-align: center;
+    font-weight:bolder;
+    margin:30px 0;
+}
+.reviews{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items:center;
+    height: 80%;
+    width: 100%;  
+    list-style: none;
+    overflow-x: scroll;
+}
+.reviews li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 60%;
+    max-width: 300px;
+    min-width: 200px;
+    gap: 25px;
+    border: 1px solid brown;
+    border-radius: 10px;
+}
+.reviews li:first-child{
+    margin-left: 20px;
+}
+.reviews li img{
+    max-width: 200px;
+    min-width: 80px;
+    min-height: 80px;
+    max-height: 200px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.reviews .quote{
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: brown;
+    text-align: center;
+}
+.reviews li h4{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: right;
+    color: brown;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+hr{
+    border: 2px solid  brown;
+}
+
+
+                             /*Main end*/
+                             /*Footer Beginning*/
+
+footer{
+    height: 100%;
+    width: 100%;
+    margin-top: 40px;
+}            
+.footer-wrapper{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+.footer-wrapper .footer-container h4{
+    font-size: 1.5rem;
+    text-align: center;
+    color: brown;
+}      
+.footer-wrapper .company{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: space-between;
+    list-style-type: none;
+    margin-left: 5px;
+}
+.company li a{
+    color: brown;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+.company li a:hover{
+    text-decoration: underline;
+}
+
+.footer-wrapper .contact-info h4{
+    color: brown;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.footer-wrapper .contact{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.footer-wrapper .contact li a{
+    color: brown;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.footer-wrapper .contact li a:hover{
+    text-decoration: underline;
+}
+
+.footer-wrapper .Opening-time h4{
+    color: brown;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.footer-wrapper .Opening-time h5{
+    color: brown;
+    text-align:center;
+    font-size: 1.35rem;
+}
+.footer-wrapper p{
+    font-size:1.2rem;
+    color: brown;
+}
+.additional-info{
+    display:flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+ .additional-info a{
+    color: brown;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+.additional-info a:hover{
+    text-decoration: underline;
+}
+
+footer .copyright{
+    margin-top:15px;
+    width: 100%;
+    height: 30px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 1.2rem;
+    color: brown;
+}
+footer .copyright a , .copyright i{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: brown;
+}
+footer .copyright a:hover{
+    text-decoration: underline;
+}
+footer .top-btn{
+    width: 100%;
+    height: 25px;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+footer .top-btn  a{
+    width: 120px;
+    height: 30px;
+    background-color: brown;
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    padding: 5px 10px;
+}
